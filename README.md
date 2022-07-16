@@ -39,6 +39,12 @@ npm run dev
 npm run build
 ```
 
+- Docker image
+
+```
+docker build -t jw-notes-merger-server .
+```
+
 # Endpoints
 
     - /merge-db
