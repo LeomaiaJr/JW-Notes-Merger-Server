@@ -1,4 +1,5 @@
 import express from 'express';
+import 'dotenv/config';
 
 import cors from 'cors';
 import { Request, Response, Router } from 'express';
@@ -115,6 +116,6 @@ route.post('/merge-db', async (req: Request, res: Response) => {
 
 app.use(route);
 
-app.listen(4000, () => {
-  console.log('server started at port 4000');
+app.listen(process.env.API_PORT, () => {
+  console.log(`Server started at port ${process.env.API_PORT}`);
 });
